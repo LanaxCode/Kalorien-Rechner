@@ -1,0 +1,99 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/lily-banse--YHSwy6uqvk-unsplash.jpg');
+    background-size: 150%;
+    background-position: center;
+    background-color: rgba(37, 37, 37, 0.6);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 5px;
+    font-size: 1.5rem;
+    color: #696;
+}
+
+h3 {
+    font-size: 1.1rem;
+
+}
+
+section {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 3vh;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+section form select {
+    width: 65%;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+    border: none;
+    padding: 3px 0 3px 0;
+    border-radius: 5px;
+}
+
+div:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+
+input[type="submit"] {
+    border: none;
+    padding: 5px 10px;
+    background-color: #696;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+#height,
+#age,
+#weight {
+    width: 65%;
+    border: none;
+    padding: 3px 0 3px 0;
+    border-radius: 5px;
+}
+
+:root {
+    accent-color: #696;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    color: #bdbdbd;
+    padding-left: 5px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    cursor: pointer;
+
+}
+
+
+td,
+th {
+    background-color: white;
+    width: 300px;
+}

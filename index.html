@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorienrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h2>Kalorien - Rechner</h2>
+        </div>
+        <form action="" onsubmit="return false">
+            <div>
+                <h3>Körpergröße</h3>
+                <input type="number" name="" id="height" placeholder="Größe in cm">
+                <h3>Alter</h3>
+                <input type="number" name="" id="age" placeholder="Alter in Jahren">
+                <h3>Gewicht</h3>
+                <input type="number" name="" id="weight" placeholder="Gewicht in KG">
+            </div>
+            <div>
+                <h3>Körperbau</h3>
+                <input type="radio" name="auswahl" id="weiblich">
+                <label for="">Weiblich</label>
+                <input type="radio" name="auswahl" id="maennlich">
+                <label for="">Männlich</label>
+            </div>
+            <div>
+                <h3> Arbeits- und Freizteitaktivität</h3>
+                <select name="" id="selection">
+                    <option value="">choose an option</option>
+                    <option value="0.95">schlafen</option>
+                    <option value="1.2">Nur Sitzen oder Liegen</option>
+                    <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität
+                        in der Freizeit, z.B. Büroarbeit</option>
+                    <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                        Studierende,
+                        Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                        Handwerker,
+                        Mechaniker, Hausfrauen</option>
+                    <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+            </div>
+            <input type="submit" value="submit" onclick="calc()">
+        </form>
+        <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>kcl</th>
+                    <th>kJ</th>
+                </tr>
+                <tr>
+                    <td>Grundumsatz</td>
+                    <td id="basekcl"></td>
+                    <td id="basekj"></td>
+                </tr>
+                <tr>
+                    <td>Gesamtumsatz</td>
+                    <td id="totalkcl"></td>
+                    <td id="totalkj"></td>
+                </tr>
+            </table>
+        </div>
+        </form>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
